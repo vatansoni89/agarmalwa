@@ -1,0 +1,43 @@
+Author Git:
+https://github.com/TryCatchLearn/Reactivities
+
+Extensions:
+  Auto close tag
+  Auto rename tag
+  Bracket Pair Colorizer
+  C# for Visual Studio Code (powered by OmniSharp).
+  C# Extensions
+  ES7 React/Redux/GraphQL/React-Native snippets
+  Material Icon Theme
+  NuGet Package Manager
+  Prettier - Code formatter
+  SQLite
+
+commands:
+  dotnet --info
+  dotnet --version
+  nvm ls
+  node --version
+  nvm use v8.11.2
+
+General:
+  .vscode will be added when we open our sol from cmd promt to vscode by 'code .' command, popup comes for adding support for debug.
+  File--> Prefences--> Settings --> Search Exclude
+
+proj commands:
+  dotnet new -h
+  dotnet new sln : will create blank solution with name of containg folder
+  dotnet new classlib -n Domain
+  dotnet new webapi -n API
+  Add proj to solution file
+    dotnet sln -h
+    dotnet sln add API/
+    dotnet sln add Application/
+    dotnet sln add Domain/
+    dotnet sln add Persistence/
+  dotnet sln list
+  dotnet add reference ..\TAB
+  Add reference to a project (Application --> Domain, Application --> Persistence)/(API-->Application)/(Persistence-->Domain):
+    Go inside Application folder (cd Application) 
+    Add referce: dotnet add reference ../Domain/
+    Do same for other also
