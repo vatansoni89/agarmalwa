@@ -41,3 +41,4 @@ proj commands:
     Go inside Application folder (cd Application) 
     Add referce: dotnet add reference ../Domain/
     Do same for other also
+  Run with startter proj: dotnet run -p .\API\
