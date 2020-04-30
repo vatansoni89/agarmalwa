@@ -38,7 +38,7 @@ proj commands:
     dotnet sln add Persistence/
   dotnet sln list
   dotnet add reference ..\TAB
-  Add reference to a project (Application --> Domain, Application --> Persistence)/(API-->Application)/(Persistence-->Domain):
+  * Dependency Add reference to a project (API-->Application)/(Application --> Persistence,Domain)/(Persistence-->Domain):
     Go inside Application folder (cd Application) 
     Add referce: dotnet add reference ../Domain/
     Do same for other also
@@ -49,3 +49,4 @@ proj commands:
   Run migration by c#:
     //Program.cs ==> Running Migration.
   dotnet watch run : application autometically restart on file changes.	  
+  dotnet ef migrations add SeedValues -p .\Persistence -s .\API : Take care to stop running application before exectuing this command.

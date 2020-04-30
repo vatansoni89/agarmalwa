@@ -1,4 +1,11 @@
+using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Persistence;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace API.Controllers
 {
@@ -6,10 +13,18 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {
-        [HttpGet]
-        public string GetValue()
+        private readonly DataContext _context;
+
+        public ValuesController(DataContext context)
         {
-            return "Hii";
+            this._context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Value>>> AsyncGetValue()
+        {
+            var values = await _context.Values.ToListAsync();
+            return Ok(values);
         }
 
         [HttpGet("{id}")]
