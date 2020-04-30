@@ -12,6 +12,7 @@ Extensions:
   NuGet Package Manager
   Prettier - Code formatter
   SQLite
+  Visual studio 2019 extension: SQLite /Sql server compact tool  (https://www.youtube.com/watch?v=c3YxtoaycbI)
 
 commands:
   dotnet --info
@@ -22,7 +23,7 @@ commands:
 
 General:
   .vscode will be added when we open our sol from cmd promt to vscode by 'code .' command, popup comes for adding support for debug.
-  File--> Prefences--> Settings --> Search Exclude
+  File--> Prefences--> Settings --> Search Exclude (https://medium.com/@m3lles/how-to-hide-unwanted-folders-and-files-in-visual-studio-code-2bb0f39c4251)
 
 proj commands:
   dotnet new -h
@@ -41,4 +42,10 @@ proj commands:
     Go inside Application folder (cd Application) 
     Add referce: dotnet add reference ../Domain/
     Do same for other also
-  Run with startter proj: dotnet run -p .\API\
+  Run with starter proj: dotnet run -p .\API\
+  dotnet tool install --global dotnet-ef : 
+    1. install nuget pkg Microsoft.EntityFrameworkCore.Design
+    2. dotnet ef migrations add InitialCreate -p Persistence/ -s API/
+  Run migration by c#:
+    //Program.cs ==> Running Migration.
+  dotnet watch run : application autometically restart on file changes.	  
