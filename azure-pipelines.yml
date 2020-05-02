@@ -21,5 +21,5 @@ steps:
     command: 'publish'
     publishWebProjects: false
     projects: '**/API.csproj'
-    zipAfterPublish: true
-    workingDirectory: '$(System.DefaultWorkingDirectory)/deploy'
+    arguments: 'output deploy'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
