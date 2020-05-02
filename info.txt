@@ -50,3 +50,10 @@ proj commands:
     //Program.cs ==> Running Migration.
   dotnet watch run : application autometically restart on file changes.	  
   dotnet ef migrations add SeedValues -p .\Persistence -s .\API : Take care to stop running application before exectuing this command.
+
+  React-App-Client
+    create react app: https://create-react-app.dev/docs/getting-started/
+	  npx create-react-app client-app --use-npm --typescript
+	  npm uninstall -g create-react-app (npx create-react-app client-app --use-npm --template typescript)
+	  cd app-client
+	    npm start
