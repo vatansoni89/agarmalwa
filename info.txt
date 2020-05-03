@@ -24,6 +24,10 @@ commands:
 General:
   .vscode will be added when we open our sol from cmd promt to vscode by 'code .' command, popup comes for adding support for debug.
   File--> Prefences--> Settings --> Search Exclude (https://medium.com/@m3lles/how-to-hide-unwanted-folders-and-files-in-visual-studio-code-2bb0f39c4251)
+  Deployment video: https://www.youtube.com/watch?v=_gURf7CW1lg&t=567s
+  Deployment video with visual editor(Connect > Use the classic editor): https://www.youtube.com/watch?v=MoFAR_6KDFo&list=LL6ism5a5vRSxHkugR_mmFMQ&index=3&t=1076s
+  Deploy react app: https://www.youtube.com/watch?v=aMO-NQ1Xza0&t=620s
+
 
 proj commands:
   dotnet new -h
